@@ -2,11 +2,11 @@
 <!DOCTYPE devices PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
 
 
-  <device xmlns:xi="http://www.w3.org/2001/XInclude" name="cer_mobile_base_mc" type="embObjMotionControl">
+  <device xmlns:xi="http://www.w3.org/2001/XInclude" name="mobile_base_mc" type="embObjMotionControl">
       <xi:include href="../../general.xml" />
-      <xi:include href="../electronics/cer_base-ems1-eln.xml" />
-      <xi:include href="../mechanicals/cer_base-ems1-mec.xml" />
-      <xi:include href="../motorControl/cer_base-ems1-mc-service.xml" />
+      <xi:include href="../electronics/base-ems1-eln.xml" />
+      <xi:include href="../mechanicals/base-ems1-mec.xml" />
+      <xi:include href="../motorControl/base-ems1-mc-service.xml" />
 
     <group name="LIMITS">
         <param name="jntPosMax">                  0       0       </param>

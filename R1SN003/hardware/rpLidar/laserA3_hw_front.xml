@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>    
 
 
-    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="cer_laser_front_device" type="rpLidar3">  
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="R1_laser_front_device" type="rpLidar3">  
        <group name="GENERAL">
-            <param name="name">            cer_laserFront     </param>
+            <param name="name">            R1_laserFront     </param>
             <param name="serial_baudrate"> 256000       </param>
             <param name="serial_port">     /dev/ttyUSB1 </param>
             <param name="sample_buffer_life">  1        </param>

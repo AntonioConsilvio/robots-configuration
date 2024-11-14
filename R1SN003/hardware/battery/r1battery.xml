@@ -4,7 +4,7 @@
 <device xmlns:xi="http://www.w3.org/2001/XInclude" name="r1battery" type="embObjBattery">  
 
 	<xi:include href="../../general.xml" />
-    <xi:include href="../electronics/cer_base-ems1-eln.xml" />
+    <xi:include href="../electronics/base-ems1-eln.xml" />
 
     <group name="SERVICE">
 

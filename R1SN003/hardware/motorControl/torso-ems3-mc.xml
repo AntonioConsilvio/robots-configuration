@@ -4,11 +4,11 @@
  <!-- Initialization file for EMS 15 - CER torso tripod + yaw, 4 dof -->
 
 
-  <device xmlns:xi="http://www.w3.org/2001/XInclude" name="cer_torso_mc" type="embObjMotionControl">
+  <device xmlns:xi="http://www.w3.org/2001/XInclude" name="torso_mc" type="embObjMotionControl">
       <xi:include href="../../general.xml" />
-      <xi:include href="../electronics/cer_torso-ems3-eln.xml" />
-      <xi:include href="../mechanicals/cer_torso-ems3-mec.xml" />
-      <xi:include href="../motorControl/cer_torso-ems3-mc-service.xml" />
+      <xi:include href="../electronics/torso-ems3-eln.xml" />
+      <xi:include href="../mechanicals/torso-ems3-mec.xml" />
+      <xi:include href="../motorControl/torso-ems3-mc-service.xml" />
 
     <group name="LIMITS">
         <param name="jntPosMax">                0.15    0.15         0.15       30     </param>

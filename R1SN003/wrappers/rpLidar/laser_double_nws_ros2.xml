@@ -7,7 +7,7 @@
     <param name="frame_id">    mobile_base_double_lidar   </param>
     <action phase="startup" level="10" type="attach">
         <paramlist name="networks">
-            <elem name="cer_laser"> cer_double_laser_device  </elem>
+            <elem name="R1_laser"> R1_double_laser_device  </elem>
         </paramlist>
     </action>
     <action phase="shutdown" level="15" type="detach" />

@@ -21,17 +21,17 @@
     <xi:include href="wrappers/rpLidar/laser_double_nws_ros2.xml" enabled_by="enable_ros2" disabled_by="disable_lidar" />
 
     <!-- BASE -->
-    <xi:include href="hardware/motorControl/cer_base-ems1-mc.xml" disabled_by="disable_base" />
-    <xi:include href="wrappers/motorControl/cer_base-mc_remapper.xml" disabled_by="disable_base" />
-    <xi:include href="wrappers/motorControl/cer_base-mc_wrapper.xml" disabled_by="disable_base" />
+    <xi:include href="hardware/motorControl/base-ems1-mc.xml" disabled_by="disable_base" />
+    <xi:include href="wrappers/motorControl/base-mc_remapper.xml" disabled_by="disable_base" />
+    <xi:include href="wrappers/motorControl/base-mc_wrapper.xml" disabled_by="disable_base" />
 
     <!-- TORSO -->
-    <xi:include href="hardware/motorControl/cer_torso-ems3-mc.xml" disabled_by="disable_torso" />
-    <xi:include href="wrappers/motorControl/cer_torso_tripod-mc_remapper.xml" disabled_by="disable_torso" />
-    <xi:include href="wrappers/motorControl/cer_torso_tripod-mc_wrapper.xml" disabled_by="disable_torso" />
-    <xi:include href="hardware/motorControl/cer_torso_equivalent-mc.xml" disabled_by="disable_torso" />
-    <xi:include href="wrappers/motorControl/cer_torso-mc_remapper.xml" disabled_by="disable_torso" />
-    <xi:include href="wrappers/motorControl/cer_torso-mc_wrapper.xml" disabled_by="disable_torso" />
+    <xi:include href="hardware/motorControl/torso-ems3-mc.xml" disabled_by="disable_torso" />
+    <xi:include href="wrappers/motorControl/torso_tripod-mc_remapper.xml" disabled_by="disable_torso" />
+    <xi:include href="wrappers/motorControl/torso_tripod-mc_wrapper.xml" disabled_by="disable_torso" />
+    <xi:include href="hardware/motorControl/torso_equivalent-mc.xml" disabled_by="disable_torso" />
+    <xi:include href="wrappers/motorControl/torso-mc_remapper.xml" disabled_by="disable_torso" />
+    <xi:include href="wrappers/motorControl/torso-mc_wrapper.xml" disabled_by="disable_torso" />
 
     <!-- POS4 -->
     <xi:include href="wrappers/POS/right_hand-pos_wrapper4.xml" disabled_by="disable_right_hand" />
@@ -66,14 +66,14 @@
     <xi:include href="hardware/motorControl/right_arm-eb24-j11_12-mc.xml" disabled_by="disable_right_arm" />
 
     <!-- HEAD -->
-    <xi:include href="hardware/motorControl/cer_head-mcp10-mc.xml" disabled_by="disable_head"/>
-    <xi:include href="wrappers/motorControl/cer_head-mc_remapper.xml" disabled_by="disable_head"/>
-    <xi:include href="wrappers/motorControl/cer_head-mc_wrapper.xml" disabled_by="disable_head"/>
+    <xi:include href="hardware/motorControl/head-mcp10-mc.xml" disabled_by="disable_head"/>
+    <xi:include href="wrappers/motorControl/head-mc_remapper.xml" disabled_by="disable_head"/>
+    <xi:include href="wrappers/motorControl/head-mc_wrapper.xml" disabled_by="disable_head"/>
 
     <!--  CALIBRATORS -->
-    <xi:include href="calibrators/cer_torso-calib.xml" disabled_by="disable_torso"/>
-    <xi:include href="calibrators/cer_head-calib.xml" disabled_by="disable_head"/>
-    <xi:include href="calibrators/cer_base-calib.xml" disabled_by="disable_base"/>
+    <xi:include href="calibrators/torso-calib.xml" disabled_by="disable_torso"/>
+    <xi:include href="calibrators/head-calib.xml" disabled_by="disable_head"/>
+    <xi:include href="calibrators/base-calib.xml" disabled_by="disable_base"/>
     <xi:include href="calibrators/left_arm-calib.xml" disabled_by="disable_left_arm" />
     <xi:include href="calibrators/right_arm-calib.xml" disabled_by="disable_right_arm" />
 
@@ -107,9 +107,9 @@
     <xi:include href="wrappers/FT/right_arm-FT_nws_ros2.xml" enabled_by="enable_ros2" disabled_by="disable_ros2 disable_right_arm" /> -->
 
     <!--  ROS -->
-    <xi:include href="wrappers/motorControl/cer_alljoints_remapper.xml" enabled_by="enable_ros enable_ros2" disabled_by="disable_base disable_head disable_left_arm disable_left_hand disable_right_arm disable_right_hand disable_torso"/>
-    <xi:include href="wrappers/motorControl/cer_alljoints_ros_wrapper.xml" enabled_by="enable_ros" disabled_by="disable_base disable_head disable_left_arm disable_left_hand disable_right_arm disable_right_hand disable_torso"/>
-    <xi:include href="wrappers/motorControl/cer_alljoints_ros2_wrapper.xml" enabled_by="enable_ros2" disabled_by="disable_base disable_head disable_left_arm disable_left_hand disable_right_arm disable_right_hand disable_torso"/>
+    <xi:include href="wrappers/motorControl/alljoints_remapper.xml" enabled_by="enable_ros enable_ros2" disabled_by="disable_base disable_head disable_left_arm disable_left_hand disable_right_arm disable_right_hand disable_torso"/>
+    <xi:include href="wrappers/motorControl/alljoints_ros_wrapper.xml" enabled_by="enable_ros" disabled_by="disable_base disable_head disable_left_arm disable_left_hand disable_right_arm disable_right_hand disable_torso"/>
+    <xi:include href="wrappers/motorControl/alljoints_ros2_wrapper.xml" enabled_by="enable_ros2" disabled_by="disable_base disable_head disable_left_arm disable_left_hand disable_right_arm disable_right_hand disable_torso"/>
 
     <!-- BATTERY -->
     <xi:include href="wrappers/battery/r1battery.xml" />

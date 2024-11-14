@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>    
 
 
-    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="cer_double_laser_device" type="cerDoubleLidar">  
+    <device xmlns:xi="http://www.w3.org/2001/XInclude" name="R1_double_laser_device" type="cerDoubleLidar">  
 
 	<group name="LASERFRONT-CFG">
             <param name="sensorName">     L_Front    </param>
@@ -22,8 +22,8 @@
         
       <action phase="startup" level="5" type="attach">
          <paramlist name="networks">
-            <elem name="L_Front">  cer_laser_front_device </elem>
-            <elem name="L_Back">   cer_laser_back_device </elem>
+            <elem name="L_Front">  R1_laser_front_device </elem>
+            <elem name="L_Back">   R1_laser_back_device </elem>
          </paramlist>
       </action>
       

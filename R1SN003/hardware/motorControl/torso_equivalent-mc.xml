@@ -2,7 +2,7 @@
 <!DOCTYPE devices PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
 
 
-  <device xmlns:xi="http://www.w3.org/2001/XInclude" name="cer_torso_equivalent_mc" type="tripodMotionControl">
+  <device xmlns:xi="http://www.w3.org/2001/XInclude" name="torso_equivalent_mc" type="tripodMotionControl">
       <xi:include href="../../general.xml" />
 
     <param name="AxisNames">  "torso_heave_eq_joint"   "torso_pitch_eq_joint"   "torso_roll_eq_joint"  </param>
@@ -33,7 +33,7 @@
 
     <action phase="startup" level="4" type="attach">
       <paramlist name="networks">
-          <elem name="FirstSetOfJoints"> cer_torso_mc </elem>
+          <elem name="FirstSetOfJoints"> torso_mc </elem>
       </paramlist>
     </action>
 
