@@ -30,20 +30,13 @@
                 <param name="location">             CAN1:2                        CAN1:2                    </param>
 
                 <!-- common to all analog services -->
-                <param name="id">                   id_fapEE                      id_fapFF                  </param>
+                <param name="id">                   r_id_fapEE                    r_id_fapFF                  </param>
+                <param name="sensorName">           r_hand_pos2                   r_hand_pos2               </param>
                 <param name="type">                 eoas_pos_angle                eoas_pos_angle            </param>
                 <param name="port">                 POS:hand_thumb_add            POS:hand_index_add        </param>
 
                 <param name="boardType">            mtb4c                         mtb4c                     </param>
-                <param name="connector">            CONN:J3_SDA2                  CONN:J3_SDA0              </param>
-
-                <group name="CALIBRATION">
-                    <!-- it is not mandatory. if not present, sensors have defaults: TYPE:decideg, ROT:zero, 0.0, false -->
-                    <param name="type">             TYPE:decideg     TYPE:decideg          </param>
-                    <param name="rotation">         ROT:zero         ROT:zero              </param>
-                    <param name="offset">           -232             -294                  </param>
-                    <param name="invertDirection">  false            false                 </param>
-                </group>
+                <param name="connector">            CONN:J3_SDA2                  CONN:J3_SDA3              </param>
 
             </group>
 
@@ -51,7 +44,7 @@
 
         <group name="SETTINGS">
             <param name="acquisitionRate"> 50 </param>                    <!-- milliseconds -->
-            <param name="enabledSensors"> id_fapEE id_fapFF</param>
+            <param name="enabledSensors"> r_id_fapEE r_id_fapFF</param>
         </group>
 
     </group>
