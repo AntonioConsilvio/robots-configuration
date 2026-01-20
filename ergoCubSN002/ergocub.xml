@@ -9,12 +9,12 @@
 
   <devices>
   
-    <!--  SKINS -->
+    <!--  SKINS 
 
     <xi:include href="wrappers/skin/right_arm-skin_wrapper.xml" />
     <xi:include href="hardware/skin/right_arm-eb3-j2_3-skin.xml" />
     <xi:include href="wrappers/skin/left_arm-skin_wrapper.xml" />
-    <xi:include href="hardware/skin/left_arm-eb4-j2_3-skin.xml" />
+    <xi:include href="hardware/skin/left_arm-eb4-j2_3-skin.xml" /> -->
   
 
     <!-- POS4 -->
