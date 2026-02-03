@@ -19,7 +19,7 @@
     <module>
         <name>python</name>
         <parameters>element_llm-task-planner/scripts/talkingllm/allyGUI.py </parameters>
-        <node>llm-node</node>
+        <node>teleop</node>
     </module>
     <module>
         <name>conda</name>
@@ -36,21 +36,16 @@
         <parameters>-nodisp -fflags nobuffer -flags low_delay -i udp://0.0.0.0:1234?listen</parameters>
     <node>ergocub-head</node>
    </module>
-   <module>
-        <name>ffmpeg</name>
-        <parameters>-f dshow -i audio="Stereo Mix (Realtek(R) Audio)" -acodec libopus -f rtp rtp://10.0.2.23:5000 -sdp_file C:/Users/ergocub/Documents/audio_ffmpeg_llm.sdp </parameters>
-    <node>llm-node</node>
-   </module>
     <module>
         <workdir>D:\element_llm-task-planner\scripts\talkingllm\config\transform_client</workdir>
         <name>yarprobotinterface</name>
         <parameters>--config iframetransform_to_iwear_walking.xml</parameters>
-        <node>llm-node</node>
+        <node>teleop</node>
    </module>
    <module>
         <name>llmGUI</name>
         <parameters>wake_word=ergocub2 llm=gemini action_handler=xbgda+ audio_source=ffmpeg</parameters>
-        <node>llm-node</node>
+        <node>teleop</node>
     </module>
     <module>
         <workdir>/usr/local/src/robot/ami/element_exteroceptive-behaviour-generation/src/</workdir>
