@@ -4,7 +4,7 @@
 <params xmlns:xi="http://www.w3.org/2001/XInclude" robot="ergoCubSN002" build="1">
     <group name="GENERAL">
         <param name="MotioncontrolVersion"> 6  </param>
-        <param name="Joints">  2  </param>  
+        <param name="Joints">  2  </param>
         <param name="AxisMap">                      0                 1           </param>
         <param name="AxisName">                    "r_ankle_pitch"     "r_ankle_roll"   </param>
         <param name="AxisType">                    "revolute"          "revolute"       </param>
@@ -20,16 +20,16 @@
     <group name="LIMITS">
         <param name="hardwareJntPosMax">          45.94         24.803   </param>
         <param name="hardwareJntPosMin">         -47.272        -25.786   </param>
-        <param name="rotorPosMin">            0             0     </param> 
+        <param name="rotorPosMin">            0             0     </param>
         <param name="rotorPosMax">            0             0     </param>
     </group>
 
     <group name="2FOC">
         <param name="AutoCalibration">                0             0       </param>
-        <param name="Verbose">                        0             0       </param>	
+        <param name="Verbose">                        0             0       </param>
         <param name="HasHallSensor">                  0             0       </param>
-        <param name="TemperatureSensorType">       PT100          PT100     </param> <!-- Supported values: PT100 or NONE. If setting NONE consider using the safer current limits for the ankel roll. -->
-<!--        <param name="TemperatureSensorType">        NONE           NONE     </param> -->
+        <!-- <param name="TemperatureSensorType">       PT100          PT100     </param> Supported values: PT100 or NONE. If setting NONE consider using the safer current limits for the ankel roll. -->
+        <param name="TemperatureSensorType">        NONE           NONE     </param>
         <param name="HasRotorEncoder">                1             1       </param>
         <param name="HasRotorEncoderIndex">           1             1       </param>
         <param name="HasSpeedEncoder">                0             0       </param>
@@ -37,15 +37,15 @@
         <param name="MotorPoles">                     12            8       </param>
     </group>
 
-    <group name="COUPLINGS"> 
-                                
+    <group name="COUPLINGS">
+
         <param name ="matrixJ2M"> 
             1.00    0.00    0.00    0.00
             0.00    1.00    0.00    0.00
             0.00    0.00    1.00    0.00
             0.00    0.00    0.00    1.00   
         </param>
-       
+
         <param name ="matrixM2J"> 
             1.00    0.00    0.00    0.00
             0.00    1.00    0.00    0.00
@@ -59,8 +59,8 @@
             0.00    0.00    1.00    0.00    0.00    0.00
             0.00    0.00    0.00    1.00    0.00    0.00   
         </param>
-                
-    </group> 
+
+    </group>
 
     <group name="JOINTSET_CFG">
         <param name= "numberofsets"> 2 </param>
@@ -78,6 +78,6 @@
         </group>
 
     </group>
-   
+
 
 </params>
