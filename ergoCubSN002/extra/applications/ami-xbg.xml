@@ -33,7 +33,7 @@
    </module>
    <module>
         <name>ffplay</name>
-        <parameters>-protocol_whitelist "file,udp,rtp" -nodisp audio_ffmpeg_llm.sdp</parameters>
+        <parameters>-nodisp -fflags nobuffer -flags low_delay -i udp://0.0.0.0:1234?listen</parameters>
     <node>ergocub-head</node>
    </module>
    <module>
